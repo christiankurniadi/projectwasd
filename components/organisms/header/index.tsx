@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Menu from './menu'
+import Menu from './Menu'
+import Auth from './Auth'
 
 export default function Header() {
   return (
@@ -29,14 +30,8 @@ export default function Header() {
           <Menu title="About" href='#about'/>
           <Menu title="Subscribe" href='#subscribe'/>
         </div>
-        <Link href="/sign-in" legacyBehavior>
-          <a className='btn hide-for-mobile'>Sign In</a>
-        </Link>
-        {/* <Link href="/sign-in" legacyBehavior>
-        <a className="header__profile">
-          <Image width={500} height={500} src="/icon/user-solid.svg" alt="cart" className="filter icon-profile" />
-        </a>
-        </Link> */}
+      <Auth />
+
       </nav>
     </header>
     </>

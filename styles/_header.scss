@@ -7,9 +7,11 @@
 
     .btn{
         margin-top: 1rem;
+        
 
         @include breakpoint-up(lg){
             width: 100px; 
+            margin-top: 0;
         }
     }
 

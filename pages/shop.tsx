@@ -10,7 +10,7 @@ export default function Shop() {
     <section className="vapes">
       <div className="container--px d-flex flex-wrap gap-5 justify-content-center">
         <Card src='/img/keycaps.jpg' title='KeyChron V2' desc="Badasss mech keys" price='$50'/>
-        <Card src='/img/keycaps.jpg' title='KeyChron V2' desc="Badasss mech keys" price='$50'/>
+        <Card src='/img/keycaps.jpg' title='Ducky One Tuxedo' desc="baksbdlasbdl" price='$50'/>
         <Card src='/img/keycaps.jpg' title='KeyChron V2' desc="Badasss mech keys" price='$50'/>
         <Card src='/img/keycaps.jpg' title='KeyChron V2' desc="Badasss mech keys" price='$50'/>
         <Card src='/img/keycaps.jpg' title='KeyChron V2' desc="Badasss mech keys" price='$50'/>
