@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Menu from './Menu'
 import Auth from './Auth'
+import Script from 'next/script'
 
 export default function Header() {
   return (
@@ -22,18 +23,20 @@ export default function Header() {
           <span></span>
           <span></span>
         </a>
-        <a href="#" className="header__logo">
+        <Link href="/" legacyBehavior>
+        <a  className="header__logo">
           <Image src="/img/logo.png" width={500} height={500} className="img-logo" alt="logo" />
         </a>
+        </Link>
         <div className="header__links hide-for-mobile">
           <Menu title="Shop" href='#shop'/>
           <Menu title="About" href='#about'/>
           <Menu title="Subscribe" href='#subscribe'/>
         </div>
       <Auth />
-
       </nav>
     </header>
+    <Script src='/static/script.js'></Script>
     </>
   )
 }

@@ -1,3 +1,5 @@
+@import 'variables';
+
 .vapes {
   padding-top: 10rem;
   padding-bottom: 8rem;
@@ -17,11 +19,11 @@
     text-align: center;
     width: 100%;
     margin: 0;
-    border-radius: 0;
+    border-radius: 4px;
   }
 
   .card-btn:first-child {
-    background-color: black;
+    background-color: $darkBlue;
     color: white;
   }
 }

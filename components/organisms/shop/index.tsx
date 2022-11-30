@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Script from 'next/script'
 
 export default function Shop() {
   return (
@@ -20,13 +21,16 @@ export default function Shop() {
       <div className="shop__keycaps flex">
         <h2>shop keycaps</h2>
         <p>Who doesn't want nice-looking keycaps? We believe everyone is a fan of nice keycaps. Explore our Keycaps collections to satisfy your eyes and flex it to the world!</p>
-        <a href="#">
+        <Link href="/shop" legacyBehavior>
+        <a>
           <div className="shop__image">
-            <Image width={500} height={500} className="shop-img" src="/img/keycaps.jpg" alt="keycaps" />
+            <Image width={500} height={500} className="shop-img" src="/img/keycaps.jpg" alt="keyboard" />
           </div>
         </a>
+      </Link>
       </div>
     </section>
+    <Script src='/static/script.js'></Script>
     </>
   )
 }
